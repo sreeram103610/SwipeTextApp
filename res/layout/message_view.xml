@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewMessageActivity" >
+    
+ 
+    
+    <ListView android:id="@+id/messageview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:cacheColorHint="@null"
+    android:divider="@null"
+	android:dividerHeight="0dp"
+   	android:listSelector="@android:color/transparent" 
+   	android:layout_above="@+id/compose"/>
+    	
+	<EditText
+	    android:id="@+id/compose"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginTop="10dp"
+	    android:layout_toLeftOf="@+id/send_message"
+	    android:hint="@string/compose_message"
+	    android:inputType="text" />
+
+	<Button
+	    android:id="@+id/send_message"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/send" />
+
+</RelativeLayout>
